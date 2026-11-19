@@ -1,0 +1,6 @@
+jieba
+numpy
+torch
+scikit-learn
+sklearn-crfsuite
+modelscope
