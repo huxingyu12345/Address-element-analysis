@@ -42,7 +42,6 @@ python main.py
 | `python main.py --no-llm` | 全程关闭 BERT 特征 |
 | `python main.py train --no-llm` | 无 BERT 训练 |
 
-`python baseline.py` 仍可用，行为与 `python main.py` 相同。
 
 ## 数据
 
@@ -53,7 +52,6 @@ python main.py
 | `data/test.conll` | 测试集 CoNLL，标签为 `O` |
 | `data/final_test.txt` | 官方测试原文（可选，`id\u0001文本`） |
 | `address_dict.txt` | jieba 用户词典，可由 `python main.py dict` 生成 |
-| `中文地址要素解析标注规范.pdf` | 官方标注规范 |
 
 标注格式每行 `字符 标签`，空行分隔一条地址。标签为 **BIES**（Begin / Inside / End / Single），例如：
 
@@ -90,7 +88,6 @@ ID<SOH>原文<SOH>标签序列
 ```text
 .
 ├── main.py                 # 统一入口
-├── baseline.py             # 兼容旧入口
 ├── requirements.txt
 ├── address_dict.txt
 ├── data/                   # 训练 / 验证 / 测试数据
